@@ -1,6 +1,6 @@
 # Set up environment
 python version require: 3.5 or higher
-install django 2.2.5 in MACOS/LINUX (might not work in version 3.x or higher)
+install django 2.2.5 in MACOS/LINUX (might not work in Django version 3.x or higher)
 ```shell
 pip install django==2.2.5
 ```
@@ -16,7 +16,9 @@ Before starting the server, register as superuser to see the posts
 ```shell
 python manage.py createsuperuser
 ```
+
 Signup your username, email, password to register as superuser
+
 Start Server
 ```shell
 python manage.py runserver
