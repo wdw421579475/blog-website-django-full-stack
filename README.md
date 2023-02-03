@@ -38,3 +38,5 @@ Comment:
 | pk(primary key) | Post        | author     | text        | date         |
 | -----------     | ----------- |----------- | ----------- |------------- |
 |       0         |     0       | alp        | comment     |Fri Feb 2023  |
+
+Author relationships for each blog and comment is connected by the ForeignKey of Comment Class, Post and Comment have OneToMany relationship.
