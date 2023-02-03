@@ -1,8 +1,18 @@
 # Set up environment
+
 python version require: 3.5 or higher
-install django 2.2.5 in MACOS/LINUX (might not work in Django version 3.x or higher)
+
+install django 2.2.5 in MACOS/LINUX (might not work in version 3.x or higher)
+
 ```shell
 pip install django==2.2.5
+```
+install Anaconda for Virtual Environment Setup, ref: https://docs.anaconda.com/anaconda/install/mac-os/
+## setup virtual Environment
+
+```shell
+conda create --name myDjangoEnv django
+proceed ([y]/n)?
 ```
 
 # Sever Startup guide
