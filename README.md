@@ -40,3 +40,37 @@ Comment:
 |       0         |     0       | alp        | comment     |Fri Feb 2023  |
 
 Author relationships for each blog and comment is connected by the ForeignKey of Comment Class, Post and Comment have OneToMany relationship.
+
+# Backend Comment APIs
+the APIs for comment are in the file: /mysite/blog/models.py
+In this file, Comment is defined as a class
+
+## Add Comment
+create a new comment object based on the post using django built-in api
+```shell
+get_object_or_404(Post, pk=pk)
+```
+
+## Delete Comment
+Delete the Comment object in the database. Click the Delete button on the right-bottom side of comment to delete.
+```shell
+comment_object.delete()
+```
+
+## Approve Comment
+After you submit your comment, you can approve that comment so that the server will confirm your comment and add 1 to the counter of the post you commented on. This works by setting approved_comment instance to be True or False.
+Choose a button to keep or dump your new comment in the web app.
+```shell
+def approve(self):
+    self.approved_comment = True
+    self.save()
+```
+
+## Show Comment
+In the website app, click on post title or comment counter to show all the comments
+
+## Show comment date
+This function is implemented using timezone api and store the date in the databse
+```shell
+created_date = models.DateTimeField(default=timezone.now)
+```
