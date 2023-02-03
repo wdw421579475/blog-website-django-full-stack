@@ -16,9 +16,9 @@ proceed ([y]/n)?
 ```
 
 # Sever Startup guide
-start at the path where django is installed
+start at the path where django is installed (Linux/MACOS)
 ```shell
-activate MyDjangoEnv
+source activate MyDjangoEnv
 cd mysite
 ```
 
