@@ -23,6 +23,8 @@ cd mysite
 ```
 
 Before starting the server, register as superuser to see the posts
+(you can skip this step and use username:1 password:1 for later sign in)
+
 ```shell
 python manage.py createsuperuser
 ```
