@@ -11,7 +11,7 @@ install Anaconda for Virtual Environment Setup, ref: https://docs.anaconda.com/a
 ## setup virtual Environment
 
 ```shell
-conda create --name myDjangoEnv django
+conda create --name myDjangoEnv django=2.2
 proceed ([y]/n)?
 ```
 
