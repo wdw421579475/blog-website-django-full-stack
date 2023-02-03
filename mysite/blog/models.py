@@ -32,7 +32,9 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
-        
+    
+    # approve function: After you submit your comment, you can approve that comment so that the server will confirm
+    # your comment and add 1 to the counter of the post you comment on 
     def approve(self):
         self.approved_comment = True
         self.save()
